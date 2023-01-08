@@ -1,0 +1,404 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CA450880295F7BA700361077 /* DiscoverCostaRicaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA45087F295F7BA700361077 /* DiscoverCostaRicaApp.swift */; };
+		CA450882295F7BA700361077 /* MainDestinationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA450881295F7BA700361077 /* MainDestinationView.swift */; };
+		CA450884295F7BA800361077 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA450883295F7BA800361077 /* Assets.xcassets */; };
+		CA450887295F7BA800361077 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA450886295F7BA800361077 /* Preview Assets.xcassets */; };
+		CA450892295F7E2300361077 /* DestinationDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA450891295F7E2300361077 /* DestinationDataService.swift */; };
+		CA450894295F7F4E00361077 /* DestinationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA450893295F7F4E00361077 /* DestinationViewModel.swift */; };
+		CA450896295F7F7400361077 /* Destination.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA450895295F7F7400361077 /* Destination.swift */; };
+		CA9CF1552960C6C800064BD4 /* DestinationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9CF1542960C6C800064BD4 /* DestinationListView.swift */; };
+		CA9CF1572960C70100064BD4 /* DestinationPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9CF1562960C70100064BD4 /* DestinationPreviewView.swift */; };
+		CA9CF1592960C73000064BD4 /* DestinationAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9CF1582960C73000064BD4 /* DestinationAnnotationView.swift */; };
+		CA9CF15B2960C77A00064BD4 /* DestinationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9CF15A2960C77A00064BD4 /* DestinationDetailView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CA45087C295F7BA700361077 /* DiscoverCostaRica.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiscoverCostaRica.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA45087F295F7BA700361077 /* DiscoverCostaRicaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverCostaRicaApp.swift; sourceTree = "<group>"; };
+		CA450881295F7BA700361077 /* MainDestinationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDestinationView.swift; sourceTree = "<group>"; };
+		CA450883295F7BA800361077 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CA450886295F7BA800361077 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CA450891295F7E2300361077 /* DestinationDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationDataService.swift; sourceTree = "<group>"; };
+		CA450893295F7F4E00361077 /* DestinationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationViewModel.swift; sourceTree = "<group>"; };
+		CA450895295F7F7400361077 /* Destination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Destination.swift; sourceTree = "<group>"; };
+		CA9CF1542960C6C800064BD4 /* DestinationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationListView.swift; sourceTree = "<group>"; };
+		CA9CF1562960C70100064BD4 /* DestinationPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationPreviewView.swift; sourceTree = "<group>"; };
+		CA9CF1582960C73000064BD4 /* DestinationAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationAnnotationView.swift; sourceTree = "<group>"; };
+		CA9CF15A2960C77A00064BD4 /* DestinationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationDetailView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CA450879295F7BA700361077 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CA450873295F7BA700361077 = {
+			isa = PBXGroup;
+			children = (
+				CA45087E295F7BA700361077 /* DiscoverCostaRica */,
+				CA45087D295F7BA700361077 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CA45087D295F7BA700361077 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CA45087C295F7BA700361077 /* DiscoverCostaRica.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CA45087E295F7BA700361077 /* DiscoverCostaRica */ = {
+			isa = PBXGroup;
+			children = (
+				CA45087F295F7BA700361077 /* DiscoverCostaRicaApp.swift */,
+				CA450890295F7DCD00361077 /* DestinationData */,
+				CA45088D295F7C0300361077 /* Model */,
+				CA45088F295F7C2400361077 /* Views */,
+				CA45088E295F7C1600361077 /* ViewModels */,
+				CA450883295F7BA800361077 /* Assets.xcassets */,
+				CA450885295F7BA800361077 /* Preview Content */,
+			);
+			path = DiscoverCostaRica;
+			sourceTree = "<group>";
+		};
+		CA450885295F7BA800361077 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CA450886295F7BA800361077 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CA45088D295F7C0300361077 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CA450895295F7F7400361077 /* Destination.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CA45088E295F7C1600361077 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				CA450893295F7F4E00361077 /* DestinationViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		CA45088F295F7C2400361077 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CA450881295F7BA700361077 /* MainDestinationView.swift */,
+				CA9CF1542960C6C800064BD4 /* DestinationListView.swift */,
+				CA9CF1562960C70100064BD4 /* DestinationPreviewView.swift */,
+				CA9CF1582960C73000064BD4 /* DestinationAnnotationView.swift */,
+				CA9CF15A2960C77A00064BD4 /* DestinationDetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CA450890295F7DCD00361077 /* DestinationData */ = {
+			isa = PBXGroup;
+			children = (
+				CA450891295F7E2300361077 /* DestinationDataService.swift */,
+			);
+			path = DestinationData;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CA45087B295F7BA700361077 /* DiscoverCostaRica */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA45088A295F7BA800361077 /* Build configuration list for PBXNativeTarget "DiscoverCostaRica" */;
+			buildPhases = (
+				CA450878295F7BA700361077 /* Sources */,
+				CA450879295F7BA700361077 /* Frameworks */,
+				CA45087A295F7BA700361077 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DiscoverCostaRica;
+			productName = DiscoverCostaRica;
+			productReference = CA45087C295F7BA700361077 /* DiscoverCostaRica.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CA450874295F7BA700361077 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					CA45087B295F7BA700361077 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+				};
+			};
+			buildConfigurationList = CA450877295F7BA700361077 /* Build configuration list for PBXProject "DiscoverCostaRica" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CA450873295F7BA700361077;
+			productRefGroup = CA45087D295F7BA700361077 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CA45087B295F7BA700361077 /* DiscoverCostaRica */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CA45087A295F7BA700361077 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA450887295F7BA800361077 /* Preview Assets.xcassets in Resources */,
+				CA450884295F7BA800361077 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CA450878295F7BA700361077 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA450892295F7E2300361077 /* DestinationDataService.swift in Sources */,
+				CA450882295F7BA700361077 /* MainDestinationView.swift in Sources */,
+				CA9CF1592960C73000064BD4 /* DestinationAnnotationView.swift in Sources */,
+				CA450896295F7F7400361077 /* Destination.swift in Sources */,
+				CA450880295F7BA700361077 /* DiscoverCostaRicaApp.swift in Sources */,
+				CA450894295F7F4E00361077 /* DestinationViewModel.swift in Sources */,
+				CA9CF15B2960C77A00064BD4 /* DestinationDetailView.swift in Sources */,
+				CA9CF1572960C70100064BD4 /* DestinationPreviewView.swift in Sources */,
+				CA9CF1552960C6C800064BD4 /* DestinationListView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CA450888295F7BA800361077 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CA450889295F7BA800361077 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CA45088B295F7BA800361077 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DiscoverCostaRica/Preview Content\"";
+				DEVELOPMENT_TEAM = L5NFV748VS;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.DiscoverCostaRica;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CA45088C295F7BA800361077 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DiscoverCostaRica/Preview Content\"";
+				DEVELOPMENT_TEAM = L5NFV748VS;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.DiscoverCostaRica;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CA450877295F7BA700361077 /* Build configuration list for PBXProject "DiscoverCostaRica" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA450888295F7BA800361077 /* Debug */,
+				CA450889295F7BA800361077 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA45088A295F7BA800361077 /* Build configuration list for PBXNativeTarget "DiscoverCostaRica" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA45088B295F7BA800361077 /* Debug */,
+				CA45088C295F7BA800361077 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CA450874295F7BA700361077 /* Project object */;
+}
