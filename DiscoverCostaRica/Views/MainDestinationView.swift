@@ -47,7 +47,7 @@ extension MainDestinationView {
                 Button {
                     vm.toggleDestinationsList()
                 } label: {
-                    Text(vm.mapDestination.minName)
+                    Text(vm.mapDestination.shortName)
                         .font(.title2)
                         .fontWeight(.black)
                         .foregroundColor(.primary)
@@ -77,11 +77,16 @@ extension MainDestinationView {
                             }
                         }
                 }
-                .background(.thickMaterial)
-                .cornerRadius(10)
-                .shadow(color: Color.black.opacity(0.2), radius: 20, x: 0, y: 15)
-            } 
+                
+            }
+            if vm.showDestinationsList {
+                DestinationListView()
+                    .onAppear()
+            }
         }
+        .background(.thickMaterial)
+        .cornerRadius(10)
+        .shadow(color: Color.black.opacity(0.2), radius: 20, x: 0, y: 15)
     }
     
     private var mapLayer: some View {

@@ -55,10 +55,7 @@ extension DestinationPreviewView {
             Text(destination.name)
                 .font(.title2)
                 .fontWeight(.bold)
-            
-//            Text(destination.city)
-//                .font(.title3)
-            
+  
             Text(destination.province)
                 .font(.subheadline)
         }

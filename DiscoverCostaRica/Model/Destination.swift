@@ -10,17 +10,21 @@ import MapKit
 
 struct Destination: Identifiable, Equatable {
 
-    let minName: String
+    let shortName: String
     let name: String
     let city: String
     let province: String
     let description: String
     let link: String
     let topography: String
+    let price: String
+    let textDirections: String
+    let hoursOfOperation: String
     let activityType: [String]
     let imageNames: [String]
     let coordinates: CLLocationCoordinate2D
 
+    
     
     
     var id: String {
