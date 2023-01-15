@@ -90,7 +90,7 @@ extension MainDestinationView {
     }
     
     private var mapLayer: some View {
-        Map(coordinateRegion: $vm.mapRegion , annotationItems: vm.destinations) { destination in
+        Map(coordinateRegion: $vm.mapRegion, annotationItems: vm.destinations) { destination in
             MapAnnotation(coordinate: destination.coordinates) {
                 //Custom Map Pin
                 DestinationAnnotationView() // - Confirmed to Equatable here

@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct DiscoverCostaRicaApp: App {
+    
+    @StateObject private var vm = DestinationViewModel()
+    
     var body: some Scene {
         WindowGroup {
             MainDestinationView()
+                .environmentObject(vm)
         }
     }
 }
