@@ -24,6 +24,10 @@ struct DestinationListView: View {
                 }
             }
             .listStyle(PlainListStyle())
+            .navigationTitle("Destinations")
+            .navigationBarTitleDisplayMode(.inline)
+            .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always), prompt: "Search for a destination")
+            
         }
     }
     
@@ -31,7 +35,10 @@ struct DestinationListView: View {
         if searchText.isEmpty {
             return vm.destinations
         } else {
-            return vm.destinations.filter { $0.id.localizedStandardContains(searchText)  
+            return vm.destinations.filter { $0.id.localizedStandardContains(searchText) ||
+                $0.topography.localizedStandardContains(searchText) ||
+                $0.province.localizedStandardContains(searchText) ||
+                $0.reverseSearch.localizedStandardContains(searchText)
                 //Add more logic for the search
             }
         }

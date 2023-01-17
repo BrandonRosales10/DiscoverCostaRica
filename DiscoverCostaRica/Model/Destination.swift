@@ -25,10 +25,12 @@ struct Destination: Identifiable, Equatable {
     let coordinates: CLLocationCoordinate2D
 
     
-    
-    
     var id: String {
-        name + " " + city
+        name + " " + province
+    }
+    
+    var reverseSearch: String {
+        province + " " + name
     }
     
     static func == (lhs: Destination, rhs: Destination) -> Bool {
