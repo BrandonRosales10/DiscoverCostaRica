@@ -16,7 +16,7 @@ class DestinationViewModel: ObservableObject {
     //Current destination on the map
     @Published var mapDestination: Destination {
         didSet {
-            
+            updateMapRegion(destination: mapDestination)
         }
     }
     

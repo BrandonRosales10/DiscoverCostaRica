@@ -26,8 +26,9 @@ struct MainDestinationView: View {
                 
                 destinationPreviewStack
             }
-            
-            
+        }
+        .sheet(item: $vm.sheetDestination) { destination in
+            DestinationDetailView(destination: destination)
         }
     }
 }

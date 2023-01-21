@@ -9,6 +9,8 @@ import SwiftUI
 
 struct DestinationPreviewView: View {
     
+    @EnvironmentObject private var vm: DestinationViewModel
+    
     let destination: Destination
     
     var body: some View {
@@ -64,7 +66,7 @@ extension DestinationPreviewView {
     
     private var discoverMoreButton: some View {
         Button {
-            
+            vm.sheetDestination = destination
         } label: {
             Text("Discover More")
                 .font(.headline)

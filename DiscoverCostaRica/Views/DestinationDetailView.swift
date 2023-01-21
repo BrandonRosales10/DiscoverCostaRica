@@ -8,13 +8,42 @@
 import SwiftUI
 
 struct DestinationDetailView: View {
+    
+    @EnvironmentObject private var vm: DestinationViewModel
+    
+    let destination: Destination
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ScrollView {
+            VStack {
+                imageSection
+            }
+        }
     }
 }
 
 struct DestinationDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        DestinationDetailView()
+        DestinationDetailView(destination: DestinationDataService.destinations.first!)
+            .environmentObject(DestinationViewModel())
     }
+}
+
+extension DestinationDetailView {
+    
+    private var imageSection: some View {
+        TabView {
+            ForEach(destination.imageNames, id: \.self) {
+                Image($0)
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: UIDevice.current.userInterfaceIdiom == .pad ? nil : UIScreen.main.bounds.width)
+                    .clipped()
+            }
+        }
+        .frame(height: 500)
+        .tabViewStyle(PageTabViewStyle())
+    }
+    
+    
 }
