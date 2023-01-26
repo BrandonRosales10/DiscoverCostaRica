@@ -70,7 +70,7 @@ class DestinationViewModel: ObservableObject {
         }
     }
     
-    func openAppleMaps(latitude: CLLocationDegrees, longitude: CLLocationDegrees) {
+    func openGoogleMaps(latitude: CLLocationDegrees, longitude: CLLocationDegrees) {
         
         let url = URL(string: "comgooglemaps://?saddr=&daddr=\(latitude),\(longitude)&directionsmode=driving")
         
@@ -83,6 +83,18 @@ class DestinationViewModel: ObservableObject {
             UIApplication.shared.open(urlBrowser!, options: [:], completionHandler: nil)
         }
         
+    }
+    
+    func openWazeApp(latitude: CLLocationDegrees, longitude: CLLocationDegrees) {
+        
+        let url = URL(string: "waze://ul?ll=\(latitude),\(longitude)&navigate=yes")
+        
+        if UIApplication.shared.canOpenURL(url!) {
+            UIApplication.shared.open(url!, options: [:], completionHandler: nil)
+        } else {
+            let appUrl = URL(string: "https://waze.com/ul?ll=\(latitude),\(longitude)&navigate=yes")
+            UIApplication.shared.open(appUrl!, options: [:], completionHandler: nil)
+        }
     }
     
     

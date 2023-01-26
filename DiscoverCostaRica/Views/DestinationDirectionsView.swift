@@ -17,9 +17,14 @@ struct DestinationDirectionsView: View {
     var body: some View {
         VStack {
             Button("Open with Google Maps") {
-                vm.openAppleMaps(latitude: destination.latitude, longitude: destination.longitude)
+                vm.openGoogleMaps(latitude: destination.latitude, longitude: destination.longitude)
             }
-            .buttonStyle(.borderedProminent) // <- This style needs to be changed the 
+            .buttonStyle(.borderedProminent) // <- This style needs to be changed
+            
+            Button("Open with Waze") {
+                vm.openWazeApp(latitude: destination.latitude, longitude: destination.longitude)
+            }
+            .buttonStyle(.borderedProminent) // <- This style needs to be changed
         }
     }
 }
