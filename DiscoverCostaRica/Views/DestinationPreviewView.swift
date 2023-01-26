@@ -77,7 +77,7 @@ extension DestinationPreviewView {
     
     private var directionsButton: some View {
         Button {
-            
+            vm.sheetDestinationDirection = destination
         } label: {
             Text("Directions")
                 .font(.headline)

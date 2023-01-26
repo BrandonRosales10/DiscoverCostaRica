@@ -30,6 +30,9 @@ struct MainDestinationView: View {
         .sheet(item: $vm.sheetDestination) { destination in
             DestinationDetailView(destination: destination)
         }
+        .sheet(item: $vm.sheetDestinationDirection) { destination in
+            DestinationDirectionsView(destination: destination)
+        }
     }
 }
 

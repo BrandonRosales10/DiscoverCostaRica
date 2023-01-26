@@ -18,6 +18,7 @@
 		CA9CF1572960C70100064BD4 /* DestinationPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9CF1562960C70100064BD4 /* DestinationPreviewView.swift */; };
 		CA9CF1592960C73000064BD4 /* DestinationAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9CF1582960C73000064BD4 /* DestinationAnnotationView.swift */; };
 		CA9CF15B2960C77A00064BD4 /* DestinationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9CF15A2960C77A00064BD4 /* DestinationDetailView.swift */; };
+		CAB351942981E37C00FDC7A4 /* DestinationDirectionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB351932981E37C00FDC7A4 /* DestinationDirectionsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,8 @@
 		CA9CF1562960C70100064BD4 /* DestinationPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationPreviewView.swift; sourceTree = "<group>"; };
 		CA9CF1582960C73000064BD4 /* DestinationAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationAnnotationView.swift; sourceTree = "<group>"; };
 		CA9CF15A2960C77A00064BD4 /* DestinationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationDetailView.swift; sourceTree = "<group>"; };
+		CAB351932981E37C00FDC7A4 /* DestinationDirectionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationDirectionsView.swift; sourceTree = "<group>"; };
+		CAB351952981EA5100FDC7A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +68,7 @@
 		CA45087E295F7BA700361077 /* DiscoverCostaRica */ = {
 			isa = PBXGroup;
 			children = (
+				CAB351952981EA5100FDC7A4 /* Info.plist */,
 				CA45087F295F7BA700361077 /* DiscoverCostaRicaApp.swift */,
 				CA450890295F7DCD00361077 /* DestinationData */,
 				CA45088D295F7C0300361077 /* Model */,
@@ -108,6 +112,7 @@
 				CA9CF1562960C70100064BD4 /* DestinationPreviewView.swift */,
 				CA9CF1582960C73000064BD4 /* DestinationAnnotationView.swift */,
 				CA9CF15A2960C77A00064BD4 /* DestinationDetailView.swift */,
+				CAB351932981E37C00FDC7A4 /* DestinationDirectionsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -199,6 +204,7 @@
 				CA9CF15B2960C77A00064BD4 /* DestinationDetailView.swift in Sources */,
 				CA9CF1572960C70100064BD4 /* DestinationPreviewView.swift in Sources */,
 				CA9CF1552960C6C800064BD4 /* DestinationListView.swift in Sources */,
+				CAB351942981E37C00FDC7A4 /* DestinationDirectionsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,6 +336,7 @@
 				DEVELOPMENT_TEAM = L5NFV748VS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DiscoverCostaRica/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -359,6 +366,7 @@
 				DEVELOPMENT_TEAM = L5NFV748VS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DiscoverCostaRica/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

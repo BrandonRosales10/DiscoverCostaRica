@@ -22,6 +22,8 @@ struct Destination: Identifiable, Equatable {
     let hoursOfOperation: String
     let activityType: [String]
     let imageNames: [String]
+    let latitude: CLLocationDegrees
+    let longitude: CLLocationDegrees
     let coordinates: CLLocationCoordinate2D
 
     

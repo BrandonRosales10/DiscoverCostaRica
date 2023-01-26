@@ -33,6 +33,8 @@ class DestinationViewModel: ObservableObject {
     
     @Published var sheetDestination: Destination? = nil
     
+    @Published var sheetDestinationDirection: Destination? = nil
+    
     init() {
         let destinations = DestinationDataService.destinations
         self.destinations = destinations
@@ -66,6 +68,21 @@ class DestinationViewModel: ObservableObject {
         withAnimation(.easeInOut) {
             showFavoritesList.toggle()
         }
+    }
+    
+    func openAppleMaps(latitude: CLLocationDegrees, longitude: CLLocationDegrees) {
+        
+        let url = URL(string: "comgooglemaps://?saddr=&daddr=\(latitude),\(longitude)&directionsmode=driving")
+        
+        if UIApplication.shared.canOpenURL(url!) {
+            UIApplication.shared.open(url!, options: [:], completionHandler: nil)
+        } else {
+            
+            let urlBrowser = URL(string: "https://www.google.co.in/maps/dir/??saddr=&daddr=\(latitude),\(longitude)&directionsmode=driving")
+                             
+            UIApplication.shared.open(urlBrowser!, options: [:], completionHandler: nil)
+        }
+        
     }
     
     
