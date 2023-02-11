@@ -12,6 +12,7 @@ class DestinationDataService {
     
     static let destinations: [Destination] = [
     Destination(
+                id: 1,
                 shortName:"Arenal Volcano",
                 name: "Arenal Volcano National Park",
                 city: "La Fortuna de San Carlos",
@@ -26,9 +27,11 @@ class DestinationDataService {
                 imageNames: ["arenal1", "arenal2", "arenal3", "arenal4", "arenal5"],
                 latitude: CLLocationDegrees(10.465743),
                 longitude: CLLocationDegrees(-84.736345),
-                coordinates: CLLocationCoordinate2D(latitude: 10.465743, longitude: -84.736345)
+                coordinates: CLLocationCoordinate2D(latitude: 10.465743, longitude: -84.736345),
+                isFavorite: false
     ),
     Destination(
+               id: 2,
                shortName:"Marino Ballena",
                name: "Marino Ballena National Park",
                city: "Uvita",
@@ -43,9 +46,11 @@ class DestinationDataService {
                imageNames: ["marino1", "marino2", "marino3", "marino4"],
                latitude: CLLocationDegrees(9.152655),
                longitude: CLLocationDegrees(-83.756499),
-               coordinates: CLLocationCoordinate2D(latitude: 9.152655, longitude: -83.756499)
+               coordinates: CLLocationCoordinate2D(latitude: 9.152655, longitude: -83.756499),
+               isFavorite: false
     ),
     Destination(
+                id: 3,
                 shortName: "Barbilla National Park",
                 name: "Barbilla National Park",
                 city: "Turrialba",
@@ -60,9 +65,11 @@ class DestinationDataService {
                 imageNames: ["barbilla1", "barbilla2", "barbilla3", "barbilla4"],
                 latitude: CLLocationDegrees(9.972638),
                 longitude: CLLocationDegrees(-83.459470),
-                coordinates: CLLocationCoordinate2D(latitude: 9.972638, longitude: -83.459470)
+                coordinates: CLLocationCoordinate2D(latitude: 9.972638, longitude: -83.459470),
+                isFavorite: false
     ),
     Destination(
+                id: 4,
                 shortName: "Barra Honda",
                 name: "Barra Honda National Park",
                 city: "Santa Ana",
@@ -77,9 +84,11 @@ class DestinationDataService {
                 imageNames: ["barra1", "barra2","barra3", "barra4", "barra5"],
                 latitude: CLLocationDegrees(10.175926),
                 longitude: CLLocationDegrees(-85.371158),
-                coordinates: CLLocationCoordinate2D(latitude: 10.175926, longitude: -85.371158)
+                coordinates: CLLocationCoordinate2D(latitude: 10.175926, longitude: -85.371158),
+                isFavorite: false
     ),
     Destination(
+                id: 5,
                 shortName: "Braulio Carrillo",
                 name: "Braulio Carrillo National Park",
                 city: "Guapiles",
@@ -94,9 +103,11 @@ class DestinationDataService {
                 imageNames: ["braulio1", "braulio2", "braulio3", "braulio4", "braulio5"],
                 latitude: CLLocationDegrees(10.147931),
                 longitude: CLLocationDegrees(-83.944939),
-                coordinates: CLLocationCoordinate2D(latitude: 10.147931, longitude: -83.944939)
+                coordinates: CLLocationCoordinate2D(latitude: 10.147931, longitude: -83.944939),
+                isFavorite: false
     ),
     Destination(
+               id: 6,
                shortName: "Cahuita",
                name: "Cahuita National Park",
                city: "Cahuita",
@@ -111,9 +122,11 @@ class DestinationDataService {
                imageNames: ["cahuita1", "cahuita2", "cahuita3", "cahuita4", "cahuita5", "cahuita6"],
                latitude: CLLocationDegrees(9.714281),
                longitude: CLLocationDegrees(-82.821712),
-               coordinates: CLLocationCoordinate2D(latitude: 9.714281, longitude: -82.821712)
+               coordinates: CLLocationCoordinate2D(latitude: 9.714281, longitude: -82.821712),
+               isFavorite: false
     ),
     Destination(
+               id: 7,
                shortName: "Caño Negro",
                name: "Caño Negro Mixed National Wildlife Refuge",
                city: "Los Chiles",
@@ -128,9 +141,11 @@ class DestinationDataService {
                imageNames: ["cano1", "cano2", "cano3", "cano4", "cano5", "cano6"],
                latitude: CLLocationDegrees(10.888895),
                longitude: CLLocationDegrees(-84.788857),
-               coordinates: CLLocationCoordinate2D(latitude: 10.888895, longitude: -84.788857)
+               coordinates: CLLocationCoordinate2D(latitude: 10.888895, longitude: -84.788857),
+               isFavorite: false
     ),
     Destination(
+               id: 8,
                shortName: "Carara",
                name: "Carara National Park",
                city: "Tarcoles",
@@ -145,7 +160,8 @@ class DestinationDataService {
                imageNames: ["carara1", "carara2", "carara3", "carara4", "carara5"],
                latitude: CLLocationDegrees(9.781044),
                longitude: CLLocationDegrees(-84.606234),
-               coordinates: CLLocationCoordinate2D(latitude: 9.781044, longitude: -84.606234)
+               coordinates: CLLocationCoordinate2D(latitude: 9.781044, longitude: -84.606234),
+               isFavorite: false
     ),
     
     ]

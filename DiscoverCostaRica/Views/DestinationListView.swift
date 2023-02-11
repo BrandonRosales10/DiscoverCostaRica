@@ -15,6 +15,21 @@ struct DestinationListView: View {
     var body: some View {
         NavigationView {
             List {
+                HStack {
+                    Button {
+                        vm.toggleFavoritesList()
+                    } label: {
+                        HStack {
+                            Text("Favorites")
+                            Image(systemName: "heart.fill")
+                                .foregroundColor(.red)
+                        }
+                        
+                    }
+                    .buttonStyle(.borderedProminent)
+                    .frame(maxWidth: .infinity)
+                }
+
                 ForEach(filteredResults) { destination in
                     Button {
                         vm.showNextDestination(destintion: destination)
@@ -27,19 +42,22 @@ struct DestinationListView: View {
             .navigationTitle("Destinations")
             .navigationBarTitleDisplayMode(.inline)
             .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always), prompt: "Search for a destination")
-            
         }
     }
     
     var filteredResults: [Destination] {
-        if searchText.isEmpty {
+        
+        //Make sure the search bar works while vm.showFavoritesList is true
+        if vm.showFavoritesList {
+            return vm.destinations.filter { vm.savedItems.contains($0.id)}
+            
+        } else if searchText.isEmpty {
             return vm.destinations
         } else {
-            return vm.destinations.filter { $0.id.localizedStandardContains(searchText) ||
+            return vm.destinations.filter { $0.searchBy.localizedStandardContains(searchText) ||
                 $0.topography.localizedStandardContains(searchText) ||
                 $0.province.localizedStandardContains(searchText) ||
                 $0.reverseSearch.localizedStandardContains(searchText)
-                //Add more logic for the search
             }
         }
     }
@@ -73,9 +91,14 @@ extension DestinationListView {
             .frame(maxWidth: .infinity, alignment: .leading)
             
             HStack {
-                Text(destination.topography)
-                    .font(.subheadline)
+                Image(systemName: vm.contains(destination) ? "heart.fill" : "heart")
+                    .foregroundColor(.red)
+                    .onTapGesture {
+                        vm.toggleFavorites(item: destination)
+                    }
             }
         }
     }
+    
+    
 }

@@ -20,6 +20,8 @@ class DestinationViewModel: ObservableObject {
         }
     }
     
+    
+    
     //Current map on region
     @Published var mapRegion: MKCoordinateRegion = MKCoordinateRegion()
     
@@ -31,9 +33,22 @@ class DestinationViewModel: ObservableObject {
     
     @Published var showFavoritesList: Bool = false
     
+    @Published var savedItems: Set<Int> = [0, 0]
+    
     @Published var sheetDestination: Destination? = nil
     
     @Published var sheetDestinationDirection: Destination? = nil
+    
+    var filteredDesintations: [Destination] {
+        
+        if showFavoritesList {
+            return destinations.filter { savedItems.contains($0.id)}
+        } else {
+            return destinations
+        }
+    }
+    
+    private var db = Database()
     
     init() {
         let destinations = DestinationDataService.destinations
@@ -41,7 +56,12 @@ class DestinationViewModel: ObservableObject {
         self.mapDestination = destinations.first!
         
         self.updateMapRegion(destination: destinations.first!)
+        
+        self.savedItems = db.load()
+        
     }
+    
+    
     
     private func updateMapRegion(destination: Destination) {
         withAnimation(.easeInOut) {
@@ -68,6 +88,19 @@ class DestinationViewModel: ObservableObject {
         withAnimation(.easeInOut) {
             showFavoritesList.toggle()
         }
+    }
+    
+    func contains(_ item: Destination) -> Bool {
+        savedItems.contains(item.id)
+    }
+    
+    func toggleFavorites(item: Destination) {
+        if contains(item) {
+            savedItems.remove(item.id)
+        } else {
+            savedItems.insert(item.id)
+        }
+        db.save(items: savedItems)
     }
     
     func openGoogleMaps(latitude: CLLocationDegrees, longitude: CLLocationDegrees) {

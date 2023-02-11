@@ -10,6 +10,7 @@ import MapKit
 
 struct Destination: Identifiable, Equatable {
 
+    var id: Int
     let shortName: String
     let name: String
     let city: String
@@ -25,9 +26,10 @@ struct Destination: Identifiable, Equatable {
     let latitude: CLLocationDegrees
     let longitude: CLLocationDegrees
     let coordinates: CLLocationCoordinate2D
+    var isFavorite: Bool
 
     
-    var id: String {
+    var searchBy: String {
         name + " " + province
     }
     

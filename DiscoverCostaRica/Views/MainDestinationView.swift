@@ -65,21 +65,6 @@ extension MainDestinationView {
                                 .padding()
                                 .rotationEffect(Angle(degrees: vm.showDestinationsList ? 180 : 0))
                         }
-                        .overlay(alignment: .trailing) {
-                            Button {
-                                //Action which toggles favorites list
-                            } label: {
-                                Image(systemName: "heart.fill")
-                                    .resizable()
-                                    .scaledToFill()
-                                    .frame(width: 24, height: 24)
-                                    .foregroundColor(Color.red)
-                                    //Need to customize the animation of the heart
-                                    .animation(.none, value: vm.showFavoritesList)
-                                    .padding()
-                                    
-                            }
-                        }
                 }
                 
             }
