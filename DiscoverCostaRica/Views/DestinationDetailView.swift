@@ -93,9 +93,9 @@ extension DestinationDetailView {
         
             VStack(alignment: .leading) {
                 Button {
-                    
+                    vm.toggleFavorites(item: destination)
                 } label: {
-                    Image(systemName: "heart")
+                    Image(systemName: vm.contains(destination) ? "heart.fill" : "heart")
                         .resizable()
                         .scaledToFill()
                         .frame(width: 40, height: 40)
@@ -137,20 +137,26 @@ extension DestinationDetailView {
     }
     
     private var mapLayer: some View {
-       
-        Map(coordinateRegion: .constant(MKCoordinateRegion(
-            center: destination.coordinates,
-            span: MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1))),
-            annotationItems: [destination]) { destination in
-            MapAnnotation(coordinate: destination.coordinates) {
-                DestinationAnnotationView()
-                    .shadow(radius: 10)
+        Button {
+            vm.sheetDestinationDirection = destination
+            
+        } label: {
+            Map(coordinateRegion: .constant(MKCoordinateRegion(
+                center: destination.coordinates,
+                span: MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1))),
+                annotationItems: [destination]) { destination in
+                MapAnnotation(coordinate: destination.coordinates) {
+                    DestinationAnnotationView()
+                        .shadow(radius: 10)
+                }
             }
+                .allowsHitTesting(false)
+                .aspectRatio(1, contentMode: .fit)
+                .cornerRadius(30)
+                .padding()
         }
-            .allowsHitTesting(false)
-            .aspectRatio(1, contentMode: .fit)
-            .cornerRadius(30)
-            .padding()
+
+        
     }
     
     

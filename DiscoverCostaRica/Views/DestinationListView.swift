@@ -42,23 +42,29 @@ struct DestinationListView: View {
             .navigationTitle("Destinations")
             .navigationBarTitleDisplayMode(.inline)
             .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always), prompt: "Search for a destination")
+            .scrollDismissesKeyboard(.immediately)
         }
     }
     
     var filteredResults: [Destination] {
         
-        //Make sure the search bar works while vm.showFavoritesList is true
-        if vm.showFavoritesList {
-            return vm.destinations.filter { vm.savedItems.contains($0.id)}
+        if vm.showFavoritesList && searchText.isEmpty {
+            return vm.destinations.filter { vm.savedItems.contains($0.id) }
             
-        } else if searchText.isEmpty {
-            return vm.destinations
-        } else {
+        } else if !vm.showFavoritesList && !searchText.isEmpty {
             return vm.destinations.filter { $0.searchBy.localizedStandardContains(searchText) ||
                 $0.topography.localizedStandardContains(searchText) ||
                 $0.province.localizedStandardContains(searchText) ||
                 $0.reverseSearch.localizedStandardContains(searchText)
             }
+        } else if vm.showFavoritesList && !searchText.isEmpty {
+            return vm.destinations.filter { vm.savedItems.contains($0.id) &&
+               ($0.topography.localizedStandardContains(searchText) ||
+                $0.province.localizedStandardContains(searchText) ||
+                $0.reverseSearch.localizedStandardContains(searchText))
+            }
+        } else {
+            return vm.destinations
         }
     }
 }

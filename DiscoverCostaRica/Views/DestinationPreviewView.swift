@@ -29,7 +29,7 @@ struct DestinationPreviewView: View {
         .background(
             RoundedRectangle(cornerRadius: 10)
                 .fill(.ultraThinMaterial)
-                .offset(y:85)
+                .offset(y:65)
         )
         .cornerRadius(10)
     }
@@ -54,7 +54,7 @@ extension DestinationPreviewView {
     
     private var titleSection: some View {
         VStack(alignment: .leading, spacing: 4) {
-            Text(destination.name)
+            Text(destination.shortName)
                 .font(.title2)
                 .fontWeight(.bold)
   
