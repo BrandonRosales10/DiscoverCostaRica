@@ -45,8 +45,10 @@ struct DestinationDetailView: View {
                 
                 mapLayer
             }
-            
         }
+        .ignoresSafeArea()
+        .background(.ultraThinMaterial)
+        .overlay(backButton, alignment: .topLeading)
     }
 }
 
@@ -157,6 +159,22 @@ extension DestinationDetailView {
         }
 
         
+    }
+    
+    private var backButton: some View {
+        Button {
+            vm.sheetDestination = nil
+        } label: {
+            Image(systemName: "xmark")
+                .font(.headline)
+                .padding(16)
+                .foregroundColor(.primary)
+                .background(.thickMaterial)
+                .cornerRadius(10)
+                .shadow(radius: 4)
+                .padding()
+        }
+
     }
     
     

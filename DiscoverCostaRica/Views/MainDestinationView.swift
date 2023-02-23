@@ -32,6 +32,7 @@ struct MainDestinationView: View {
         }
         .sheet(item: $vm.sheetDestinationDirection) { destination in
             DestinationDirectionsView(destination: destination)
+                .presentationDetents([.fraction(0.60)])
         }
     }
 }
